@@ -7,11 +7,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from openpyxl import load_workbook
 
 # Load the Excel file
-wb = load_workbook(filename='/Users/winner/Desktop/reviews.xlsx')
+wb = load_workbook(filename='reviews.xlsx')
 ws = wb.active
 
 # Launch the web driver (ensure you have installed the appropriate browser driver)
-driver = webdriver.Chrome('/Users/winner/Desktop/chromedriver')
+driver = webdriver.Chrome()
 
 # Iterate over the rows in the Excel file
 for row in ws.iter_rows(min_row=2):
